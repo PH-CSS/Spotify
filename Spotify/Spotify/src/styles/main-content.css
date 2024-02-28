@@ -1,0 +1,247 @@
+
+
+.main-container{
+  
+    max-width: 82vw;
+    height: 91vh;
+    margin-left: 320px;
+    margin-right: 0px;
+    background-color: var(--bg-icon);
+    border-radius: 5px;
+    /* position: fixed; */
+
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 25.5px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 8px  8px 0 0;
+    gap: 800px;
+    position: fixed;
+    background-color: var(--bg-change-color);
+}
+
+    .header__navigation .navigation{
+        display: flex;
+        justify-content: space-around;
+        
+        align-items: center;
+
+    }
+
+        .header__navigation .navigation .arrow-left{
+            margin-right: 1.25rem;
+        }
+
+    .arrow-left, .arrow-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: var(--bg-icon);
+        background-color: var(--bg-arrow-color);
+        border-radius: 50%;
+        border:none;
+        cursor: pointer;
+
+    }
+
+
+.header__login{
+display: flex;
+align-items: center;
+
+}
+
+    .header__search{
+        display: flex;
+        align-items: center;
+        width: 364px;
+        height: 48px;
+        margin-left: 20px;
+        background-color: #242424;
+        border-radius: 500px;
+        border: 1px solid transparent;
+        
+    }
+
+
+        .header__search img{
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+
+        }
+
+            .header__search input{
+                background: transparent;
+                border: none;
+                padding: 0px 100px 0px 12px;
+                color: #fff;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                outline: none;
+            }
+
+        .header__login .subscribe{
+            color: #a7a7a7;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: transparent;
+            border: none;
+            margin-right: 32px;
+            cursor: pointer;
+        }
+
+
+                .header__login .login{
+                    width: 100px;
+                    height: 48px;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 700;
+                    border-radius: 40px;   
+                    cursor: pointer;
+                    border: none;
+                }
+
+
+                .black{
+                    background-color: #000;
+                    height: 7.5vh;
+                    width: 100%;
+                }
+
+                /* MUSIC SECTION */
+
+                .music-list{
+                    padding: 0px 30px 0px 30px;
+                    
+                }
+
+                .playlist  {
+                    padding:80px 0px 40px 0px ;
+                    
+                }
+
+                .playlist span{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+
+                .playlist-nav{
+                    display: flex;
+                    gap: 30px;
+                    flex-wrap: wrap;
+                }
+
+        .music-sections{
+            height: 270px;
+            width: 170px;
+            padding: 15px 15px 0px 15px;
+            border-radius: 5px;
+            background-color: var(--bg-music-card);
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .img-container{    
+            position: absolute;     
+            display: flex;
+            width: 170px;
+            height: 170px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;        }
+
+        .img-container img{
+            border-radius: 5px;
+            
+        }
+
+
+                .music-sections h2 {
+                    padding: 190px 0px 10px 0px ;
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                    .music-sections span{
+                        
+                        color: #6d6d6d;
+                    }
+
+            .play-button{
+                position: absolute;
+                width: 170px;
+                height: 170px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: end;
+                margin-top: 5px;
+                margin-left: -5px;
+                transition: all 0.3s;
+                opacity: 0;
+                
+            }
+
+    .box-input{
+        height: 50px;
+        width: 50px;
+        display: grid;
+        place-items: center;
+        
+    }
+
+                .music-sections .img-container input{
+                    
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: rgb(2, 175, 2);
+                    
+                    /* opacity: 0; */
+                }
+
+                .play-button input{
+                    background-image: url(../icons/small-right.png);
+                    background-repeat: no-repeat;
+                    background-size:auto;
+                    background-position: center;
+                    box-shadow: 100px 100px 150px rgba(0,0,0,.4);
+                }
+                
+
+                /* Hover animation segment  */
+
+
+        .music-sections:hover{
+            transition: all 0.3s;
+            background-color: var(--bg-music-card-change);
+        }
+
+            .music-sections:hover .play-button{
+                margin-top: -5px;             
+            }
+
+            .music-sections:hover .play-button{   
+                transition: all 0.5s;         
+                opacity: 1;     
+            }
+
+            .play-button input:hover{
+                transform: scale(1.05) ;
+                transition: all 0.2s;
+            }
+
+            
+
+        
+
+    
