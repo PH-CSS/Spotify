@@ -19,8 +19,8 @@
     padding: 16px 25.5px;
     margin: 10px 0px 0px 0px;
     border-radius: 8px  8px 0 0;
-    gap: 800px;
-    position: fixed;
+    gap: 5vw;
+    position: relative;
     background-color: var(--bg-change-color);
 }
 
@@ -94,7 +94,7 @@ align-items: center;
             font-weight: 700;
             background-color: transparent;
             border: none;
-            margin-right: 32px;
+            margin-right: 52px;
             cursor: pointer;
         }
 
@@ -111,17 +111,18 @@ align-items: center;
                 }
 
 
-                .black{
-                    background-color: #000;
-                    height: 7.5vh;
-                    width: 100%;
-                }
-
+                
                 /* MUSIC SECTION */
+
+                .music-nav{
+                    height: 750px;
+                    width: 80vw;
+                    overflow-y: auto;
+                }
 
                 .music-list{
                     padding: 0px 30px 0px 30px;
-                    
+                    overflow: hidden;
                 }
 
                 .playlist  {
@@ -156,7 +157,7 @@ align-items: center;
             display: flex;
             width: 170px;
             height: 170px;
-            overflow: hidden;
+            /* overflow: hidden; */
             box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;        }
 
         .img-container img{
@@ -190,15 +191,9 @@ align-items: center;
                 
             }
 
-    .box-input{
-        height: 50px;
-        width: 50px;
-        display: grid;
-        place-items: center;
-        
-    }
+    
 
-                .music-sections .img-container input{
+                .music-sections .img-container button{
                     
                     height: 50px;
                     width: 50px;
@@ -209,12 +204,16 @@ align-items: center;
                     /* opacity: 0; */
                 }
 
-                .play-button input{
+                .play-button button{
                     background-image: url(../icons/small-right.png);
                     background-repeat: no-repeat;
                     background-size:auto;
                     background-position: center;
                     box-shadow: 100px 100px 150px rgba(0,0,0,.4);
+                }
+
+                .Bot{
+                    cursor: pointer;
                 }
                 
 
@@ -235,7 +234,7 @@ align-items: center;
                 opacity: 1;     
             }
 
-            .play-button input:hover{
+            .play-button button:hover{
                 transform: scale(1.05) ;
                 transition: all 0.2s;
             }

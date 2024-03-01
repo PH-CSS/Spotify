@@ -1,0 +1,126 @@
+
+
+    .telaInteira{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        margin-top: -100vh;
+        background-color: #000000d0;
+    }
+
+
+
+       
+
+        .content{
+            display: flex;
+            height: fit-content;
+            width: fit-content;
+           color: #fff;
+           font-size: 15px;
+           padding: 60px;
+            background-color: rgb(72, 75, 75);
+            border-radius: 10px;
+        }
+
+
+        .ImageEsc img{
+            border-radius: 10px;
+        }
+
+        .ImageEsc{
+            height: auto;
+        }
+
+
+        .asd{
+            display: flex;
+            padding-left: 80px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .asd h1{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+           
+        }
+
+
+        .content .login-free{
+            padding: 10px;
+            width: fit-content;
+            height: 48px;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 40px;   
+            cursor: pointer;
+            border: none;
+        }
+    
+                .content .Instal{
+                    padding: 10px;
+                     width: fit-content;
+                     height: 48px;
+                     color: #ffffff;
+                     font-size: 16px;
+                     font-weight: 700;
+                     border-radius: 40px;   
+                     cursor: pointer;
+                     border: solid 1px  #757575;
+                     background-color: transparent;
+                 }
+
+                 .asd h3 {  
+                    color: #b3b3b3;
+                 }
+
+
+                        .Enter{
+                             text-decoration: none;
+                             cursor: pointer;
+                             transition: all 0.5s;
+                             color: #fff;
+                        }
+
+                       
+
+                        
+
+                         .Enter:hover{
+                            text-decoration:underline;
+                        }
+                    
+
+
+
+    /* fechar popUp */
+
+
+    
+
+    .telaInteira .close {
+        color: #b3b3b3;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.5s;
+    } 
+
+    .telaInteira .close:hover{
+        text-decoration:underline;
+    }
+
+
+
+
+ 

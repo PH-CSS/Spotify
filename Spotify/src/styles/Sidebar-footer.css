@@ -8,7 +8,7 @@
     Body{
         background-color: #000;
         font-family: var(--font-dm-sans);
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
  
@@ -283,7 +283,7 @@
 
 
     footer{     
-        position: fixed;
+        position: relative;
         display: flex;
         width: 96.8vw;
         background-image: linear-gradient(90deg,#af2896,#509bf5);
