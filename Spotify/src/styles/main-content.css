@@ -50,14 +50,7 @@
 
     }
 
-
-.header__login{
-display: flex;
-align-items: center;
-
-}
-
-    .header__search{
+ .header__search{
         display: flex;
         align-items: center;
         width: 364px;
@@ -68,6 +61,14 @@ align-items: center;
         border: 1px solid transparent;
         
     }
+    /* parte de entrar e login / user e nome */
+.header__login{
+display: flex;
+align-items: center;
+
+}
+
+   
 
 
         .header__search img{
@@ -109,6 +110,27 @@ align-items: center;
                     cursor: pointer;
                     border: none;
                 }
+
+
+                /* user e nome */
+
+                .header__login img {
+                    display: none;
+                    width: 20px;
+                    margin: 24px 10px;
+                    cursor: pointer;
+
+                }
+
+                .header__login .welcomeOrBack{
+                    color: var(--font-color);
+                    font: var(--font-dm-sans);
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin-right: 1vw;
+                    cursor: pointer;
+                }
+
 
 
                 

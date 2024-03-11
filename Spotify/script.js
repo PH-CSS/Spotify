@@ -5,9 +5,15 @@ const fecharPopUp = document.querySelector(".close");
 // pop up incriçoes formulario
 const buttonInscreverSe  = document.querySelector(".subscribe");
 const buttonInscreverSeFooter  = document.querySelector(".footer__button");
-const buttonEntar  = document.querySelector(".login");
 const Form = document.querySelector(".BlackOut");
 const fecharForm = document.querySelector(".formEnd");
+
+// mudar o "entrar"
+const bntEntrarOutropop  = document.querySelector(".Enter");
+const bntEntrarOutropopOprimeiro  = document.querySelector(".EnterOnOther");
+const bntEntrar  = document.querySelector(".login");
+const MudarTexto = document.querySelector(".changeText");
+const P = document.querySelector(".ix");
 
 // botão de confirmação do formulario
 const ConfirmacaoFormulario = document.querySelector(".Confirmed");
@@ -19,7 +25,12 @@ const formDasPlaylists = document.querySelector(".login-free");
 // botao acesso das playlists
 const playlistsTrue  = document.querySelectorAll(".music-sections");
 
+// botao confirmação de email e usuario
+const btn = document.querySelector(".Confirmed");
 
+// imagem de usuario depois da retirada do inscrever-se
+const imgUsuarioTrue = document.querySelector(".imgUsuarioTrue");
+const welcomeOrBack = document.querySelector(".welcomeOrBack");
 
 
 
@@ -98,13 +109,45 @@ function openPopUp() {
                     }else{
             popUp.style.display = 'none';
         }
-        
 
+        MudarTexto.innerHTML = "<h1>Comece com <br>uma conta gratuita do <br>Spotify</h1>"
+        
+        
                 
     }
     
-       buttonInscreverSe.addEventListener ("click", () => openForm());
-       buttonInscreverSeFooter.addEventListener ("click", () => openForm());
+       buttonInscreverSe.addEventListener ("click", function() {
+        openForm()
+    P.innerHTML = " Já tem uma conta? <a class="EnterOnOther">Entrar</a> </h3> ";
+
+   });
+       buttonInscreverSeFooter.addEventListener ("click", function() {
+        openForm()
+    P.style.display = " Já tem uma conta? <a class="EnterOnOther">Entrar</a> </h3> ";
+
+   });
+    //    formulario "já cadastrado"
+
+
+ 
+    bntEntrarOutropop.addEventListener ("click", function() {
+        openForm()
+
+    MudarTexto.textContent = "Entrar no Spotify"
+    P.style.display = 'none';
+
+   });
+
+    bntEntrar.addEventListener ("click",  function() {
+        openForm()
+
+    MudarTexto.textContent = "Entrar no Spotify"
+    P.style.display = 'none';
+});
+
+
+
+
 
         // abrir e fechar
 formDasPlaylists.addEventListener ("click", () => openForm());
@@ -139,7 +182,7 @@ function playlisttrue() {
     
 
         if (confiForm === true) {
-            console.log(confiForm)
+            // console.log(confiForm)
 
             playlistsTrue.forEach((butto) =>
     butto.addEventListener("click", () => {
@@ -165,6 +208,40 @@ ConfirmacaoFormulario.addEventListener ("click", () => {
                 fecharFormulario()
 
                 playlisttrue()
-        })
+        });
 
-   
+        
+
+        // receber valor de Nome do usuario 
+
+        btn.addEventListener( "click" , function(e){
+
+            e.preventDefault();
+
+            const name = document.querySelector("#name");
+
+            const valuer = name.value;
+
+
+     // retirada do inscrever-se
+                buttonInscreverSe.style.display= 'none'
+                bntEntrar.style.display= 'none'
+// usuario
+                imgUsuarioTrue.style.display='block';
+// nome usuario
+
+    welcomeOrBack.innerHTML = "Bem  vindo, "+ name.value + "!";
+
+
+            // console.log (value);
+
+        } )
+
+
+
+        //Abrir perfil de usuario e tirar "entrar, login"
+
+
+
+
+
